@@ -1,0 +1,17 @@
+@import '../../vars.scss';
+
+.intro {
+  background-color: $bg-main;
+
+  .container {
+    max-width: $container-mxWidth;
+    margin: 0 auto;
+    padding: 100px 0;
+    box-sizing: border-box;
+  }
+
+  .header {
+    color: white;
+    max-width: 580px;
+  }
+}
