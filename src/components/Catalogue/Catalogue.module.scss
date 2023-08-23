@@ -1,0 +1,10 @@
+@import '../../vars.scss';
+
+.catalogue {
+
+  .container{
+    max-width: $container-mxWidth;
+    margin: 0 auto;
+    padding: 40px 0;
+  }
+}
