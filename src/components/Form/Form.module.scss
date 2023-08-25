@@ -1,0 +1,39 @@
+/* Скрываем фон чекбокса */
+.MuiCheckbox-root {
+  background-color: transparent !important;
+}
+
+/* Скрываем фон при наведении */
+.MuiCheckbox-root:hover {
+  background-color: transparent !important;
+}
+
+/* Скрываем фон при активации */
+.MuiCheckbox-root.Mui-checked:hover {
+  background-color: transparent !important;
+}
+
+/* Скрываем внутренний бордер */
+.MuiCheckbox-root.Mui-checked {
+  border: none;
+}
+
+/* Убираем границу при фокусе */
+.MuiCheckbox-root.Mui-focused {
+  outline: none;
+} 
+
+.sizes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid rgba(219, 187, 169, 1);
+  justify-content: center;
+  margin-bottom: 20px;
+
+  .size {
+    border: 1px solid rgba(219, 187, 169, 1);
+    padding: 10px;
+    text-align: center;
+    
+  }
+}
