@@ -2,6 +2,7 @@ import './App.css';
 import Header from './components/Header/Header';
 import Intro from './components/Intro/Intro';
 import Catalogue from './components/Catalogue/Catalogue'
+import MuiCard from './components/MuiCard/MuiCard';
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       <Header/>
       <Intro/>
       <Catalogue/>
-      
+      <MuiCard/>
     </div>
   );
 }

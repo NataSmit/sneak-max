@@ -7,9 +7,10 @@ import {
   FormGroup,
   FormControlLabel,
   Checkbox,
+  Button,
 } from "@mui/material";
 import styles from './Form.module.scss'
-import Button from '../../ui/Button/Button'
+import MuiButton from '../../ui/Button/Button'
 
 const sizes = [35, 36, 37, 38, 39, 40, 41, 42, 43]
 
@@ -92,7 +93,12 @@ export default function Form() {
           ))}
         </div>
       </Box>
-      <Button text={'Применить'}/>
+      <Box sx={{textAlign: 'center', marginBottom: 1.5}}>
+        <MuiButton text={'Применить'}/>
+      </Box>
+      <Box sx={{textAlign: 'center'}}>
+        <Button variant="text">Сбросить</Button>
+      </Box>
     </Box>
   );
 }
