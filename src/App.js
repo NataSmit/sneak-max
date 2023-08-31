@@ -2,7 +2,7 @@ import './App.css';
 import Header from './components/Header/Header';
 import Intro from './components/Intro/Intro';
 import Catalogue from './components/Catalogue/Catalogue'
-import MuiCard from './components/MuiCard/MuiCard';
+import Questions from './components/Questions/Questions'
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       <Header/>
       <Intro/>
       <Catalogue/>
-      <MuiCard/>
+      <Questions/>
     </div>
   );
 }
