@@ -1,3 +1,24 @@
 .contact {
   background-color: rgba(243, 246, 246, 1);
+
+  .list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+  }
+
+  .social {
+    width: 44px;
+    height: 44px;
+    margin-right: 20px;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.9;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
