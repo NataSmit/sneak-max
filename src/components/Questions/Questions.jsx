@@ -1,11 +1,12 @@
 import { Box, Typography, Accordion, AccordionSummary, AccordionDetails } from '@mui/material'
 import React from 'react'
 import AddIcon from '@mui/icons-material/Add';
+import Title from '../Title/Title';
 
 export default function Questions() {
   return (
     <Box sx={{py: 5, maxWidth: 1152, my: 0, mx: 'auto'}}>
-      <Typography variant='h4' component='h1'sx={{color: 'rgba(68, 75, 88, 1)', marginBottom: 4}} >Часто задаваемые вопросы</Typography>
+      <Title>Часто задаваемые вопросы</Title>
       <Box sx={{maxWidth: 880, my: 0, mx: 'auto'}}>
         <Accordion disableGutters sx={{boxShadow: 'none', borderTop: '1px solid black', borderBottom: '1px solid black', '&:first-of-type': {borderRadius: 0}, '&::before': {opacity: 0}}}>
         <AccordionSummary
