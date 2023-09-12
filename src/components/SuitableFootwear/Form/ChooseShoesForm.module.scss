@@ -1,5 +1,18 @@
 .form {
-  border-top: 1px solid rgba(128, 128, 128, 1);
-  border-bottom: 1px solid rgba(128, 128, 128, 1);
-  padding: 20px 0;
+
+  .container{
+    border-top: 1px solid rgba(128, 128, 128, 1);
+    border-bottom: 1px solid rgba(128, 128, 128, 1);
+    padding: 20px 0;
+  }
+
+  .buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+
+    .page {
+      color: rgba(128, 128, 128, 1);
+    }
+  }
 }
