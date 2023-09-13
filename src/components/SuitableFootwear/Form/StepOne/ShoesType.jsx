@@ -7,7 +7,7 @@ import {
 } from "@mui/material";
 import React from "react";
 import FormTitle from "../../../../ui/FormTitle/FormTitle";
-import { shoeTypes } from "../../../../mocData/mocData";
+import { shoeTypes } from "../../../../data/mocData";
 
 export default function ShoesType() {
   return (

@@ -7,7 +7,7 @@ import {
   FormGroup,
   Grid,
 } from "@mui/material";
-import { sizes } from "../../../../mocData/mocData";
+import { sizes } from "../../../../data/mocData";
 import img from "../../../../images/ShoesStepTwo.png";
 
 export default function ShoeSize() {

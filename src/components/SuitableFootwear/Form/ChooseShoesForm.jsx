@@ -4,17 +4,16 @@ import ShoesType from "./StepOne/ShoesType";
 import { Button } from "@mui/material";
 import ShoeSize from './StepTwo/ShoeSize'
 import MoreInfo from './StepThree/MoreInfo'
-import { useMultistepForm } from '../../../hooks/useMultistepForm'
+import FinalStep from './FinalStep/FinalStep'
 
-export default function ChooseShoesForm() {
+export default function ChooseShoesForm({currentStep, goToNextStep}) {
 
-  const {currentStep, goToNextStep} = useMultistepForm()
-  const formSteps = [<ShoesType />, <ShoeSize />, <MoreInfo />]
+  const formSteps = [<ShoesType />, <ShoeSize />, <MoreInfo />, <FinalStep/>]
 
   return (
     <form className={styles.form} >
       <div className={styles.container}>
-        {formSteps[currentStep - 1]}
+        {formSteps[currentStep - 1]} 
       </div>
       <div className={styles.buttonContainer}>
         <div className={styles.page}>{currentStep <= 3 && `${currentStep} из 3`}</div>

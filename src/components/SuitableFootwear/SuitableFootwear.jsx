@@ -3,8 +3,13 @@ import React from "react";
 import Title from "../../ui/Title/Title";
 import styles from "./SuitableFootwear.module.scss";
 import ChooseShoesForm from "./Form/ChooseShoesForm";
+import { useMultistepForm } from "../../hooks/useMultistepForm";
+import { answerQuestions, provideContactData, selectShoes, selectionReady } from '../../data/text'
 
 export default function SuitableFootwear() {
+
+  const {currentStep, goToNextStep} = useMultistepForm()
+
   return (
     <div className={styles.suitable}>
       <Box
@@ -17,12 +22,11 @@ export default function SuitableFootwear() {
         }}
       >
         <Box sx={{ maxWidth: 980, my: 0, mx: "auto" }}>
-          <Title>Мы подберем идеальную пару для вас</Title>
-          <Typography sx={{ color: "rgba(128, 128, 128, 1)" }}>
-            Ответьте на три вопроса и мы вышлем каталог с самыми подходящими для
-            вас моделями
+          <Title>{currentStep <= 3 ? selectShoes : selectionReady} </Title>
+          <Typography sx={{ color: "rgba(128, 128, 128, 1)", mb: 2 }}>
+            {currentStep <= 3 ? answerQuestions : provideContactData}
           </Typography>
-          <ChooseShoesForm />
+          <ChooseShoesForm goToNextStep={goToNextStep} currentStep={currentStep} />
         </Box>
       </Box>
     </div>
