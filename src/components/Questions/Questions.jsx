@@ -28,7 +28,7 @@ export default function Questions() {
             expandIcon={<AddIcon fontSize="large" />}
             aria-controls="panel1a-content"
             id="panel1a-header"
-            sx={{ my: 2 }}
+            sx={{ my: 2, '& .MuiAccordionSummary-expandIconWrapper.Mui-expanded': {transform: 'rotate(45deg)'}}}
           >
             <Typography
               variant="h6"
@@ -58,7 +58,7 @@ export default function Questions() {
             expandIcon={<AddIcon fontSize="large" />}
             aria-controls="panel1a-content"
             id="panel1a-header"
-            sx={{ my: 2 }}
+            sx={{ my: 2, '& .MuiAccordionSummary-expandIconWrapper.Mui-expanded': {transform: 'rotate(45deg)'} }}
           >
             <Typography
               variant="h6"
