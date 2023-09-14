@@ -1,4 +1,15 @@
+.leaflet {
+  display: block;
+
+}
+
 .leaflet-container {
   height: 500px;
   width: 680px;
+}
+
+@media (max-width: 650px) {
+  .leaflet {
+    display: none;
+  }
 }

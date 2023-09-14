@@ -14,11 +14,12 @@ export default function SuitableFootwear() {
     <div className={styles.suitable}>
       <Box
         sx={{
-          maxWidth: 1152,
+          maxWidth: 1110,
           my: 0,
           mx: "auto",
           backgroundColor: "rgba(255, 244, 238, 1)",
           py: 3,
+          px: 3
         }}
       >
         <Box sx={{ maxWidth: 980, my: 0, mx: "auto" }}>

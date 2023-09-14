@@ -11,7 +11,7 @@ import Title from "../../ui/Title/Title";
 
 export default function Questions() {
   return (
-    <Box sx={{ py: 5, maxWidth: 1152, my: 0, mx: "auto" }}>
+    <Box sx={{ py: 5, maxWidth: 1152, my: 0, mx: "auto", px: 3}}>
       <Title>Часто задаваемые вопросы</Title>
       <Box sx={{ maxWidth: 880, my: 0, mx: "auto" }}>
         <Accordion
